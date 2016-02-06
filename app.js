@@ -4,10 +4,17 @@
  */
 /* This is our app.js . */
 
-var sum = function(a, b){
-	return a+b;
-};
 
-var diff = function(a, b){
-	return a-b;
-};
+var App = App || (function(){
+	var sum = function(a, b){
+		return a+b;
+	};
+
+	var diff = function(a, b){
+		return a-b;
+	};
+
+	return {
+		sum: sum, diff: diff
+	};
+})();
